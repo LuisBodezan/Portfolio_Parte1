@@ -1,0 +1,68 @@
+/* RESET: remove margens e espaçamentos padrão e ajusta o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GERAL DO BODY: fonte, fundo escuro e texto branco */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* FUNDO FIXO: imagem com sobreposição preta para contraste */
+.fundo-inicial {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('IMAGENS/imgFUNDO.gif');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* fica atrás do conteúdo */
+}
+
+/* CONTEÚDO CENTRALIZADO NA TELA */
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+/* TÍTULO PRINCIPAL */
+.conteudo h1 {
+    font-size: 3.5rem;
+    color: #f3008e;
+    margin-bottom: 20px;
+}
+
+/* TEXTO SECUNDÁRIO */
+.conteudo p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* BOTÃO ESTILIZADO: gradiente, borda arredondada e animação no hover */
+.botão {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #f3008e, #31e6f0);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.botão:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #f3008e, 0 0 25px #31e6f0;
+}
